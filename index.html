@@ -11,10 +11,10 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		/>
+		/> -->
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
@@ -42,12 +42,12 @@
 		<main>
 			<section class="hero">
 				<!--Герой-->
-				<h1 class="hero-titel">
-					Эффективные решения
-					<br />
-					для вашего бизнеса
-				</h1>
-				<button class="hero-button" type="button">Заказать услугу</button>
+				<div class="container">
+					<div class="centred" >
+						<h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
+						<button class="hero-button" type="button">Заказать услугу</button>
+					</div>					
+				</div>
 			</section>
 
 			<section class="benefits section">
@@ -75,15 +75,29 @@
 				</div>
 			</section>
 
-			<section class="section">
+			<section class="do section">
 				<div class="container">
 					<h2 class="section-titel">Чем мы занимаемся</h2>
 					<ul class="do-list list">
-						<li class="item"><img class="img" src="./images/computer.jpg" alt="Человек верстает на компьютере" width="370" /></li>
 						<li class="item">
-							<img class="img" src="./images/laptop.jpg" alt="Человек работает на ноутбуке. Адаптивная вёрстка " width="370" />
+							<img class="img" src="./images/computer.jpg" alt="Человек верстает на компьютере" width="370" />
 						</li>
-						<li class="item"><img class="img" src="./images/tablet.jpg" alt="Человек работает с палитрой цветов на планшете" width="370" /></li>
+						<li class="item">
+							<img
+								class="img"
+								src="./images/laptop.jpg"
+								alt="Человек работает на ноутбуке. Адаптивная вёрстка "
+								width="370"
+							/>
+						</li>
+						<li class="item">
+							<img
+								class="img"
+								src="./images/tablet.jpg"
+								alt="Человек работает с палитрой цветов на планшете"
+								width="370"
+							/>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -94,23 +108,32 @@
 					<ul class="team-list list">
 						<li class="item">
 							<img class="img" src="./images/photo-igor-d.jpg" alt="Фото Игорь Демяненко" width="270" />
-							<h3 class="list-titel">Игорь Демьяненко</h3>
-							<p class="text" lang="en">Product Designer</p>
+							<div class="content">
+								<h3 class="list-titel">Игорь Демьяненко</h3>
+								<p class="text" lang="en">Product Designer</p>
+							</div>
+							
 						</li>
 						<li class="item">
 							<img class="img" src="./images/photo-olga-r.jpg" alt="Фото Ольга Репина" width="270" />
-							<h3 class="list-titel">Ольга Репина</h3>
-							<p class="text" lang="en">Frontend Developer</p>
+							<div class="content">
+								<h3 class="list-titel">Ольга Репина</h3>
+								<p class="text" lang="en">Frontend Developer</p>
+							</div>							
 						</li>
 						<li class="item">
 							<img class="img" src="./images/photo-nick-t.jpg" alt="Фото Николай Тарасов" width="270" />
-							<h3 class="list-titel">Николай Тарасов</h3>
-							<p class="text" lang="en">Marketing</p>
+							<div class="content">
+								<h3 class="list-titel">Николай Тарасов</h3>
+								<p class="text" lang="en">Marketing</p>
+							</div>							
 						</li>
 						<li class="item">
 							<img class="img" src="./images/photo-mikha-y.jpg" alt="Фото Михаил Ермаков" width="270" />
-							<h3 class="list-titel">Михаил Ермаков</h3>
-							<p class="text" lang="en">UI Designer</p>
+							<div class="content">
+								<h3 class="list-titel">Михаил Ермаков</h3>
+								<p class="text" lang="en">UI Designer</p>
+							</div>							
 						</li>
 					</ul>
 				</div>
@@ -120,8 +143,8 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
-				<a class="logo" lang="en" href="/">
-					<span class="logo-accent">Web</span><span class="footer-logo">Studio</span>
+				<a class="logo" lang="en" href="./index.html">
+					<span class="logo-accent">Web</span>Studio
 				</a>
 				<address>
 					<ul class="address-list list">
